@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="JavaScript">
+        function tekan() {
+            // Fetching input values from the form
+            var quis = parseInt(document.a.quis.value);
+            var tugas = parseInt(document.a.tugas.value);
+            var uts = parseInt(document.a.uts.value);
+            var uas = parseInt(document.a.uas.value);
+
+      
+            var nilaiakhir = quis * 10 / 100 + tugas * 20 / 100 + uts * 30 / 100 + uas * 40 / 100;
+
+            
+            var grade;
+            var ket;
+            if (nilaiakhir >= 90 && nilaiakhir <= 100) {
+                grade = 'A';
+                ket = "Lulus Dengan Sangat Baik";
+            } else if (nilaiakhir >= 85 && nilaiakhir <= 94) {
+                grade = 'B';
+                ket = "Lulus Dengan Baik";
+            } else if (nilaiakhir >= 70 && nilaiakhir <= 84) {
+                grade = 'C';
+                ket = "Lulus Dengan Kurang Baik";
+            } else if (nilaiakhir >= 55 && nilaiakhir <= 69) {
+                grade = 'D';
+                ket = "Lulus Dengan Sangat Kurang Baik";
+            } else {
+                grade = 'E';
+                ket = "Jangan Sekolah";
+            }
+
+            // Setting values in the output fields
+            document.a.opres.value = grade;
+            document.a.oket.value = ket;
+        }
+    </script>
+</head>
+<body>
+    <form name="a">
+        <table border="1">
+            <!-- ... (unchanged HTML code) ... -->
+        </table>
+    </form>
+</body>
+</html>

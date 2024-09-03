@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var barang = prompt('(file rasya) nama barang');
+        var harga = prompt('(file rasya) harga barang');
+        var jumlah = prompt('(file rasya) jumlah');
+        var total = harga*jumlah;
+
+        document.writeln("<table border='1'>");
+        document.writeln('<tr>');
+            document.writeln('<td>nama barang</td> <td>harga barang</td> <td>jumlah beli</td> <td>subtotal</td>');
+            document.writeln('</tr>');
+            document.writeln('<tr>');
+            document.writeln('<td>',barang,'</td> <td>',harga,'</td> <td>',jumlah,'</td> <td>',total,'</td>');
+            document.writeln('</tr>');
+            document.writeln('<tr>');
+            document.writeln('<td colspan=5>rasya nazraditya</td>');
+            document.writeln('</tr>');
+    </script>
+    
+</body>
+</html>

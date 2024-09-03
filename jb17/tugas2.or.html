@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Latihan Dengan Objek Text</title>
+</head>
+<body>
+
+<script language="Javascript">
+    function radio_box(form) {
+        var ket = "";
+        if (form.gender.value === "wanita") {
+            ket = "Wanita";
+        } else if (form.gender.value === "Pria") {
+            ket = "Pria";
+        }
+        alert('Anda Adalah Seorang ' + ket);
+    }
+</script>
+
+<form>
+    <h1>Memasukan Data Dengan Objek Radio</h1>
+    <hr>
+    <p><input type="radio" value="wanita" name="gender">Wanita</p>
+    <p><input type="radio" value="Pria" name="gender">Pria</p>
+    <hr>
+    <p>
+        <input type="button" value="CONFIRM" onclick="radio_box(this.form)">
+        <input type="reset" value="RESET">
+    </p>
+</form>
+
+</body>
+</html>

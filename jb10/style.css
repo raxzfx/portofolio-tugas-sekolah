@@ -1,0 +1,21 @@
+.satu{border-style: dotted;}
+
+.dua {border-style: dashed;}
+
+.tiga {border-style: solid;}
+
+.empat  {border-style: double;}
+
+.lima  {border-style: groove;}
+
+.enam {border-style: ridge;}
+
+.tujuh {border-style: inset;}
+
+.delapan {border-style: outset;}
+
+.sembilan  {border-style: none;}
+
+.sepuluh {border-style: hidden;}
+
+.sebelas {border-style: dotted dashed solid double;}

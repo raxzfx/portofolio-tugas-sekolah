@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+         var jam= prompt("input jam");
+         
+         if((jam>=6)&&(jam<=10))
+    {
+       ucapan= "selamat pagi";
+    } else if ((jam>=11)&&(jam<=14)){
+       ucapan= "selamat siang";
+    } else if ((jam>=15)&&(jam<=17)){
+       ucapan= "selamat sore";
+    } else if ((jam>=18)&&(jam<=24)) {
+       ucapan= "selamat malam";
+    } else if ((jam>= 1)&&(jam<= 5 )) {
+       ucapan= "selamat turu"
+    } else {
+        document.write("gada");
+    }
+
+    alert("jam ="+jam+ ucapan);
+    </script>
+    
+</body>
+</html>

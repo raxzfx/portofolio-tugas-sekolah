@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <center>
+    <form name="calculator">
+        <h1>Membuat Kalkulator</h1>
+        <hr>
+        <br>
+        Bilangan 1 : <input type="number" name="angka1"><br><br>
+        Bilangan 2 : <input type="number" name="angka2"><br>
+        <br>
+        <hr>
+         <br>
+        <input type="button" onclick="tambah()" value="  +  ">
+        <input type="button" onclick="kurang()" value="  -  ">
+        <input type="button" onclick="kali()" value="  *  ">
+        <input type="button" onclick="bagi()" value="  /  ">
+        <input type="reset" value="c">
+    </form>
+      
+    <script type="text/javascript">
+        function tambah() {
+            var angka1 = parseFloat(document.calculator.angka1.value);
+            var angka2 = parseFloat(document.calculator.angka2.value);
+            var hasil = angka1 + angka2;
+            alert("Hasil: " + hasil);
+        }
+
+        function kurang() {
+            var angka1 = parseFloat(document.calculator.angka1.value);
+            var angka2 = parseFloat(document.calculator.angka2.value); 
+            var hasil = angka1 - angka2;
+            alert("Hasil: " + hasil);
+        }
+
+        function kali() {
+            var angka1 = parseFloat(document.calculator.angka1.value);
+            var angka2 = parseFloat(document.calculator.angka2.value);
+            var hasil = angka1 * angka2;
+            alert("Hasil: " + hasil);
+        }
+
+        function bagi() {
+            var angka1 = parseFloat(document.calculator.angka1.value);
+            var angka2 = parseFloat(document.calculator.angka2.value);
+            var hasil = angka1 / angka2;
+            alert("Hasil: " + hasil);
+        }
+    </script>
+</center>
+</body>
+</html>

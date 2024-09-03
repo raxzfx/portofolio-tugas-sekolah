@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    var nama= prompt("masukan nama");
+    var kelas= prompt("masukan kelas");
+    var nilai1= prompt("masukan nilai tugas");
+    var nilai2= prompt("masukan nilai uts");
+    var nilai3= prompt("masukan nilai uas");
+
+    var hasil1= 40/100*nilai1;
+    var hasil2= 30/100*nilai2;
+    var hasil3= 30/100*nilai3;
+    var hasilakhir= hasil1+hasil2+hasil3;
+
+    if((hasilakhir>=95)&&(hasilakhir<=100))
+    {
+       grade = "A";
+    } else if ((hasilakhir>=85)&&(hasilakhir<=94)){
+       grade = "B";
+    } else if ((hasilakhir>=70)&&(hasilakhir<=84)){
+       grade = "C";
+    } else if ((hasilakhir>=55)&&(hasilakhir<=69)) {
+       grade = "D";
+    } else{
+       grade = "E";
+    }
+
+    alert("nama ="+nama+ "kelas ="+kelas+ "nilai ="+hasilakhir+ "grade ="+grade);
+
+</script>
+
+</body>
+</html>

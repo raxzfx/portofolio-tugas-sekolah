@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tekan() {
+            var namastr = document.tugas.nama.value;
+            var alamatstr = document.tugas.alamat.value;
+
+            document.tugas.onama.value = namastr;
+            document.tugas.oalamat.value = alamatstr;
+
+            var sekolahstr = document.tugas.sekolah.value;
+            document.tugas.oasal.value = sekolahstr;
+
+            var ket = "";
+            var ket1 = "";
+            var ketjurusan = "";
+
+            if (document.tugas.ti.checked == true) {
+                ket = "Teknik Informatika";
+            }
+            if (document.tugas.mi.checked == true) {
+                ket1 = "Manajemen Informatika";
+            }
+
+            ketjurusan = "Jurusan Anda " + ket + ' ' + ket1;
+
+            document.tugas.ojurusan.value = ketjurusan;
+
+            var ketjenjang = "";
+            if (document.tugas.Jenjang.value == "diploma") {
+                ketjenjang = "Diploma";
+            } else {
+                ketjenjang = "Sarjana";
+            }
+            document.tugas.ojenjang.value = ketjenjang;
+        }
+    </script>
+</head>
+<body>
+    <form name="tugas">
+        <table border="1" align="center" width="60%" cellspacing="0" name="">
+            <tr>
+                <td align="left">
+                    <h1>Formulir Pendaftaran Calon Mahasiswa Baru</h1>
+                    <hr>
+                    <pre>
+            Nama Anda    : <input type="text" size="18" name="nama">
+            Alamat       : <input type="text" size="25" name="alamat">
+            Asal Sekolah : <select name="sekolah">
+                            <option value="sma">SMA</option>
+                            <option value="smk">SMK</option>
+                            </select>
+            Jurusan Dipilih :<input type="checkbox" value="ON" name="ti">Teknik Informatika
+                             <input type="checkbox" value="ON" name="mi">Manajemen Informatika
+            Jenjang          :<input type="radio" value="diploma" name="Jenjang">Diploma
+                              <input type="radio" value="sarjana" name="Jenjang">Sarjana 
+
+            <input type="button" value="Kirim" onclick="tekan()">   <input type="reset" value="Reset">
+                              
+            <hr>
+            Nama          : <input type="text" name="onama" size="18">
+            Alamat        : <input type="text" name="oalamat" size="25">
+            Asal Sekolah  : <input type="text" name="oasal" size="25">
+            Jurusan       : <textarea name="ojurusan" cols="30" rows="5"></textarea>
+            Jenjang       : <input type="text" name="ojenjang" size="25">
+                    </pre>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

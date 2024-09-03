@@ -1,0 +1,25 @@
+table{ font-family: Arial, Helvetica, sans-serif; 
+       
+}
+.satu{ background-color: blue;
+       color: white;
+       text-align: left;
+}
+.nis{ width: 100px; }
+.nama{ width: 500px; }
+.alamat{ width: 100px; }
+.dua:hover{
+    background-color: lightgray;
+    transition:  .3s; ease-in-out;
+    transition-delay: .2s;
+    border-radius: 5px;
+}
+.tiga:hover{
+    background-color: lightgray;
+    transition:  .3s; ease-in-out;
+    transition-delay: .2s;
+    border-radius: 5px;
+}
+.dua{
+    background-color: whitesmoke;
+}

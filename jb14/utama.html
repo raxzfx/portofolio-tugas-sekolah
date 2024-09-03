@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var kmj=20000;
+        var cln=30000;
+        var spt=50000;
+
+        var haskmj=20000 * 3;
+        var hascln=30000 * 2;
+        var hasspt=50000 * 1;
+        var utama= haskmj+hascln+hasspt;
+        var limituang=200000;
+        var pembayaran=utama-limituang;
+document.writeln("<table border='1' ")
+document.writeln("<tr>")
+document.writeln("<td>nama</td> <td>harga</td> <td>jumlah</td> <td>sub total</td>")
+document.writeln("</tr>")
+document.writeln("<tr>") 
+document.writeln("<td>kemeja</td> <td>",kmj,"</td> <td>3</td> <td>",haskmj,"</td>")
+document.writeln("</tr>")
+document.writeln("<tr>")
+document.writeln("<td>celana</td> <td>",cln,"</td> <td>2</td> <td>",hascln,"</td>")
+document.writeln("</tr>")
+document.writeln("<tr>")
+document.writeln("<td>sepatu</td> <td>",spt,"</td> <td>1</td> <td>",hasspt,"</td>")
+document.writeln("</tr>")
+document.writeln("<tr>")
+document.writeln("<td></td> <td></td> <td>total</td> <td>",utama,"</td>")    
+document.writeln("</tr>")
+document.writeln("<tr>")
+document.writeln("<td colspan=3>pembayaran</td> <td>",limituang,"</td> ")        
+document.writeln("</tr>")
+document.writeln("<tr>")
+document.writeln("<td colspan=3>kembalian</td> <td>",pembayaran,"</td> ")   
+document.writeln("</tr>")
+
+
+    </script>
+    
+</body>
+</html>

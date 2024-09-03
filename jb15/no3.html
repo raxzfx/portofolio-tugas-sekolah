@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var barang = prompt('(file rasya) nama barang');
+        var harga = prompt('(file rasya) harga barang');
+        var jumlah = prompt('(file rasya) jumlah');
+        var barang2 = prompt('(file rasya) nama barang');
+        var harga2 = prompt('(file rasya) harga barang');
+        var jumlah2 = prompt('(file rasya) jumlah');
+        var barang3 = prompt('(file rasya) nama barang');
+        var harga3 = prompt('(file rasya) harga barang');
+        var jumlah3 = prompt('(file rasya) jumlah');
+        var total = harga*jumlah;
+        var total2 = harga2*jumlah2;
+        var total3 = harga3*jumlah3;
+        var hasil = total+total2+total3;
+
+
+        document.writeln("<table border='1'>");
+        document.writeln('<tr>');
+            document.writeln('<td>nama barang</td> <td>harga barang</td> <td>jumlah beli</td> <td>subtotal</td>');
+            document.writeln('</tr>');
+            document.writeln('<tr>');
+            document.writeln('<td>',barang,'</td> <td>',harga,'</td> <td>',jumlah,'</td> <td>',total,'</td>');
+            document.writeln('</tr>');
+            document.writeln('<tr>');
+            document.writeln('<td>',barang2,'</td> <td>',harga2,'</td> <td>',jumlah2,'</td> <td>',total2,'</td>');
+            document.writeln('</tr>');
+            document.writeln('<tr>');
+            document.writeln('<td>',barang3,'</td> <td>',harga3,'</td> <td>',jumlah3,'</td> <td>',total3,'</td>');
+            document.writeln('</tr>');
+            document.writeln('<tr>');
+            document.writeln('<td colspan=3>total</td> <td>',hasil,'</td>');
+            document.writeln('</tr>');
+            document.writeln('<tr>');
+            document.writeln('<td colspan=2></td> <td <button colspan=2 onclick=bayar()> bayar</button>   </td>');
+            document.writeln('</tr>');
+            document.writeln('<tr>');
+            document.writeln('<td colspan=5>rasya nazraditya</td>');
+            document.writeln('</tr>');
+
+            function bayar() {
+                var bayar = prompt('bayar');
+                var kemba = bayar-hasil
+                alert('bayar = '+bayar+' total belanja = '+hasil+'  kembalian ='+kemba); 
+            }
+        
+        
+    </script>
+    
+</body>
+</html>

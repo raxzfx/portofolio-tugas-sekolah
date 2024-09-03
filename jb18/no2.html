@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function hitung(){
+        var quisstr = (document.fform.quis.value);
+        var tugasstr = (document.fform.tugas.value);
+        var utsstr = (document.fform.uts.value);
+        var uasstr = (document.fform.uas.value);
+        
+        var hitung1 = 10/100*quisstr
+        var hitung2 = 20/100*tugasstr
+        var hitung3 = 30/100*utsstr
+        var hitung4 = 40/100*uasstr
+        var hasilakhir = hitung1+hitung2+hitung3+hitung4
+
+        var igrade
+        var iket
+        
+        if((hasilakhir >= 95)&&(hasilakhir <=100))
+        {   igrade= "A";
+            iket = "mantap bosku";
+          
+        } else if ((hasilakhir>=85)&&(hasilakhir<=94)){
+            igrade= "B";
+            iket= "lesgow";
+        } else if ((hasilakhir>=75)&&(hasilakhir<=84)){
+            igrade= "C";
+            iket= "keren";
+        } else if ((hasilakhir>=65)&&(hasilakhir<=74)) {
+            igrade= "D";
+            iket= "dongo bgt";
+        } else {
+           igrade= "E"
+           iket= "gausa idup"
+        }
+document.fform.grade.value= igrade;
+document.fform.keterangan.value= iket;
+    }
+    </script>
+
+<form name="fform">
+    <table border="1">
+<tr>
+    <th colspan="5">
+        menghitung indeks prestasi
+    </th>
+</tr>
+<tr>
+    <td>
+        Quis (10%): <br>
+        <input type="text" size="11" name="quis">
+    </td>
+    <td>
+        Tugas (20%): <br>
+        <input type="text" size="11" name="tugas">
+    </td>
+    <td>
+        UTS (30%): <br>
+ <input type="text" size="11" name="uts">
+    </td>
+    <td>
+        UAS (40%): <br>
+    <input type="text" size="11" name="uas">
+    </td>
+</tr>
+<tr>
+    <td colspan="4">
+       <div align="center"> <input type="button" value="hitung" onclick="hitung()"> <input type="button" value="ulang" type="reset"> </div>
+    </td>
+</tr>
+<tr colspan="4">
+    <div align="center">
+    <td>
+        indeks presentasi : <input type="text" size="8" name="grade">
+    </td>
+    <td>
+        keterangan : <input type="text" size="13" name="keterangan">
+    </td>
+</div>
+</tr>
+</table>
+</form>
+    
+</body>
+</html>
